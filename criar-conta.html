@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="newstyle.css">
+        <title>Criar Conta</title>
+    </head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="topo">
+                    <h3 width="100%">Preencha o formulário abaixo.</h3>
+                    <p>É grátis e com acesso ilimitado em nossa plataforma.</p>
+                </div>
+                <div class="formulario">
+                    <form action="#" id="formulario">
+                        <div class="form-group">
+                            <label for="formNome">Nome Completo</label>
+                            <input type="text" name="formNome" id="formNome" class="form-control"  placeholder="Digite seu nome (somente letras)">
+                            <p class="nomeInvalido">Campo vazio, preencher corretamente.</p>                   
+                        </div>
+                        <div class="form-group">
+                            <label for="formEmail">E-mail</label>
+                            <input type="text" name="formEmail" id="formEmail" class="form-control" placeholder="seuemail@seuemail.com">
+                            <p class="emailInvalido">E-mail inválido, preencher corretamente.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="formTelefone">Telefone</label>
+                                    <input type="text" name="formTelefone" id="formTelefone" class="form-control" placeholder="(00) 00000-0000" maxlength="15" onkeypress="mascara(this)">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="formCargo">Profissão</label>
+                                    <input type="text" name="formCargo" id="formCargo" class="form-control" pattern="([aA-zZ]+)" placeholder="Digite sua profissão">
+                                    <p>Não se preocupe, estamos realizando uma pesquisa.</p>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="formSenha">Senha</label>                                
+                                <input type="password" name="formSenha" id="formSenha" class="form-control" placeholder="Digite uma senha">
+                                <div id="impForcaSenha"></div>  
+                                <div id="erroSenhaForca"></div>
+                                <label for="#" class="mostrar-senha">Mostrar senha
+                                    <input type="checkbox" name="showPassword" id="showPassword">
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="formSenhaConfirmacao">Digite a senha novamente</label>
+                                <input type="password" name="formSenhaConfirmacao" id="formSenhaConfirmacao" class="form-control" placeholder="Repita sua senha">  
+                                <p class="senhaInvalida">As senhas não conferem ou está vazia.</p>                              
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="#">Qual a finalidade do TaskManager para você?</label>
+                                    <input type="text" name="FormFinalidade" id="FormFinalidade" class="form-control" placeholder="Qual será seu uso?">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="#">Como nos encontrou?</label> <br>
+                                    <select name="formMidias" id="formMidias" class="form-control">
+                                        <option value="">Selecione</option>
+                                        <option value="01">Google</option>
+                                        <option value="01">Facebook</option>
+                                        <option value="01">Instagram</option>
+                                        <option value="01">Linkedin</option>
+                                        <option value="01">Indicação de amigo</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" class="formCadastrar" value="Cadastrar">
+                    </form>
+                </div>
+                <div id="div-modal" class="modal">
+                    <div class="modal-content">
+                        <p>Cadastrado com sucesso.</p>
+                        <p>Você será redirecionado a página inicial</p>
+                        <button class="confirmar">Confirmar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="formValidar.js"></script>
+</body>
+</html>

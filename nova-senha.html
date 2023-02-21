@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="newstyle.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Recuperar senha</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="recuperarEmail">
+                    <p>Qual seu e-mail?</p>
+                    <div class="require-email">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="seuemail@seuemail.com" required>
+                        <button class="rec-email">Recuperar senha</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="recuperarSenhaCodigo">
+                    <p>Digite o código abaixo</p>
+                <div class="codigo-email">
+        
+                    <div class="codigo">
+                            <input type="text" maxlength="1" class="numero-codigo" >         
+                    </div>
+                    <div class="codigo">
+                            <input type="text" maxlength="1" class="numero-codigo" >        
+                    </div>
+                    <div class="codigo">
+                            <input type="text" maxlength="1" class="numero-codigo" >        
+                    </div>
+                    <div class="codigo">
+                            <input type="text" maxlength="1" class="numero-codigo" >        
+                    </div>
+                    <div class="codigo">
+                            <input type="text" maxlength="1" class="numero-codigo" >        
+                    </div>
+                    <div class="codigo">
+                            <input type="text" maxlength="1" class="numero-codigo" >         
+                    </div>
+            
+                </div>
+                    <button class="proximo">Enviar</button> `
+                    <div id="timer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="novaSenha">
+                    <div class="form-group">
+                        <label for="formSenha">Digite a nova senha!</label>
+                        <input type="password" name="formSenha" id="formSenha" class="form-control" placeholder="Digite a senha">                        
+                    </div>
+                    <div class="form-group">
+                        <label for="formSenhaValidacao">Confirme a nova senha!</label>
+                        <input type="password" name="formSenhaValidacao" id="formSenhaValidacao" class="form-control" placeholder="Digite a senha">     
+                        <label for="#" class="mostrar-senha">Mostrar senha
+                            <input type="checkbox" name="showPassword" class="showPassword" >
+                        </label>
+                        <button class="alterar-senha">Alterar senha</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- <div class="container">
+    <div class="recuperar-email">
+        <h4>Qual seu e-mail?</h4>
+        <div class="require-email">
+            <input type="email" name="email" id="email"
+             placeholder="seuemail@seuemail.com" required>
+            <button class="rec-email">Recuperar senha</button>
+        </div>
+    </div>
+    <div class="recuperar">
+            <h4 class="texto-codigo">Digite o código abaixo</h4>
+        <div class="codigo-email">
+
+            <div class="codigo">
+                    <input type="text" maxlength="1" class="numero-codigo" >         
+            </div>
+            <div class="codigo">
+                    <input type="text" maxlength="1" class="numero-codigo" >        
+            </div>
+            <div class="codigo">
+                    <input type="text" maxlength="1" class="numero-codigo" >        
+            </div>
+            <div class="codigo">
+                    <input type="text" maxlength="1" class="numero-codigo" >        
+            </div>
+            <div class="codigo">
+                    <input type="text" maxlength="1" class="numero-codigo" >        
+            </div>
+            <div class="codigo">
+                    <input type="text" maxlength="1" class="numero-codigo" >         
+            </div>
+    
+        </div>
+                    <button class="proximo">Próximo</button> `
+                    <div id="timer"></div>
+    </div>
+
+   
+    
+       
+    
+
+
+</div> -->
+
+<div id="div-modal" class="modal">
+    <div class="modal-content">
+        <h4>Enviamos o código de recuperação para o seu e-mail!</h4>
+        <button class="confirmar">Confirmar</button>
+    </div>
+</div>
+
+<div id="div-modal-redirect" class="modal">
+    <div class="modal-content">
+        <h4>Senha alterada com sucesso!</h4>
+        <h4>Você será redirecionado a página principal.</h4>
+        <button class="fechar">Fechar</button>
+    </div>
+</div>
+
+
+    <script src="recuperarSenha.js"></script>
+</body>
+</html>
