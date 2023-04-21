@@ -6,7 +6,7 @@
 - index de manipulação
 - banco de dados
 - CRUD
-- autenticaçao de usuário
+- autenticação de usuário
 - comunicação com e-mail
 - logar com rede social
 
