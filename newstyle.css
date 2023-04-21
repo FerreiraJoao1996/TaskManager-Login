@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+.full {
+    width: 100%;
+}
+
 h3{
     display: block;
     text-align: center;
@@ -16,7 +20,7 @@ h3{
     text-transform: uppercase;
 }
 
-h3::after{
+h3::after{   
     content: " ";
     width: 230px;
     height: 5px;
@@ -375,7 +379,135 @@ h3::before{
     justify-content: center;
 }
 
-.usuario {
+
+/* PÁGINA DE APRESENTAÇÃO */
+
+ .topoHome {
+    display: flex; 
+    border-bottom: 2px solid #b60000;
+    box-shadow: 6px 3px 11px #333;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+}
+
+.topoHome h1 {
+    font-size: 1.500em;
+    margin-top: 15px;
+    text-transform: uppercase;
+    color: #b60000;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+
+.lTopoMenu{
+    text-align: end;
+}
+
+.lTopoMenu a:first-child{
+    text-decoration: none;
+    color: #b60000;
+    font-size: 1.100em;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+
+.lTopoMenu a:first-child:hover{
+    color: #7506067c;
+    transition: 800ms all;
+}
+
+.lTopoMenu a:last-child{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #b60000;
+    padding:25px 100px;
+    margin-right: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.100em;
+}
+
+.lTopoMenu a:last-child:hover{
+    color: #b60000;
+    background-color: #fff;
+    transition: 700ms all ease;
+}
+
+.banner {
+    position: fixed;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    /* background: linear-gradient(85deg, #b60000, #fff, #659bb4); */
+    background-image:  url(imagens/banner-2.jpg);
+    background-size:cover;
+    background-position: 100%; 
+    background-repeat: no-repeat;
+    /* background-attachment: fixed;   */
+}
+
+.banner p {
+    color: #fff;
+    font-size: 1.800em;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgb(46, 46, 46);
+    overflow: hidden;    
+}
+
+.banner p:first-child {    
+    padding: 80px 50px 0;
+    line-height: 35px;
+}
+
+.banner p:nth-child(2){
+    padding: 0 50px 80px;
+    font-size: 1.100em;
+}  
+
+.banner .btnBanner {
+    padding: 10px 15px;
+    background-color: #b60000;
+    position: relative;
+    left: 50px;
+    bottom: 50px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+.banner .btnBanner a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner .btnBanner a:hover{
+    color: #b60000;
+}
+
+.banner .btnBanner:hover{
+    color: #b60000;
+    background: #fff;
+    border: 1px solid #b60000;
+    transition: 800ms;
+}
+
+
+
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track{
+    border-left: 1px solid #b60000;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #b60000;
+}
+
+/* .usuario {
     display: block;
     position: fixed;
     top: 0;
@@ -451,5 +583,5 @@ h3::before{
 
 .menu ul li a {
     text-decoration: none;
-}
+} */
  

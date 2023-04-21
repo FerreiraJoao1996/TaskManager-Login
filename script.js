@@ -23,7 +23,7 @@
 
     btnlogin.addEventListener("click", () => {
         if(senha.value === usuarios.user || usuario.value === usuarios.pass){
-            window.location = "index.html";
+            window.location = "login.html";
         } else {
             alert("Preencha os dados corretamente!")
         }
